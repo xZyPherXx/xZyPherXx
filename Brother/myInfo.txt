@@ -1,0 +1,22 @@
+Profile {
+
+	Name: Punnawat Pinsaeng
+	Age : 20 years
+	My Birth Day : 16 October 2002
+	Apocalypse : Never Give Up
+}
+
+Faverite {
+
+	Activity : Hang out , Party
+	Hobby : Coding
+	Food : Noodle
+	Drink : Sprite , Lipton Mixed berry
+}
+
+Contact {
+
+	Facebook : Punnawat Pinsaeng
+	Instagram : _punnawat.psz
+	Line : 0909250292
+}
