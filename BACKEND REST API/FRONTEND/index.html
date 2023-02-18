@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trainning </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.3/axios.min.js" integrity="sha512-wS6VWtjvRcylhyoArkahZUkzZFeKB7ch/MHukprGSh1XIidNvHG1rxPhyFnL73M0FC1YXPIXLRDAoOyRJNni/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js" integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <!-- <div id="app"> {{ message }} </div> -->
+
+    <div id="app">
+        
+        {{ users }}
+
+        <table>
+    
+            <tr>
+                <th> Name </th>
+                <th> Age </th>
+            </tr>
+
+            <tr>
+                <td> User 1 </td>
+                <td> 20 </td>
+            </tr>
+    
+        </table>
+
+        <form action="">
+
+            <input type="text" placeholder="name" name="name">
+            <input type="text" placeholder="age" name="age">
+            <button> Submit </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    const { createApp } = Vue
+    createApp({
+
+        data() {
+
+            return {
+
+                users : [] ,
+                form : {
+
+                    name : '' ,
+                    age : ''
+                }
+
+            }
+
+        } ,
+        created() {
+
+            this.getUsers()
+
+        } ,
+        methods : {
+
+            getUsers : () => {
+
+                axios.get('http://localhost:666/api/users')
+                .then(res => {
+
+                    console.log(res.data)
+                    users = res.data.data
+                    console.log('Data : ' , users)
+                })
+                .catch(err => {
+
+                    console.log(err)
+                })
+
+            } ,
+
+            addUser : () => {
+
+                axios.get('http://localhost:666/api/users')
+                .then(res => {
+
+                    name : form.name
+                    age : form.age
+                    console.log('Success')
+                })
+                .catch(err => {
+
+                    console.log('Failure')
+                })
+
+            }
+
+        }
+
+    }).mount('#app')
+
+  </script>
