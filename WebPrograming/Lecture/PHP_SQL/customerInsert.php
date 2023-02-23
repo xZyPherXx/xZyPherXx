@@ -14,7 +14,7 @@
         <h2> Insert Customer </h2>
 
         <p style="color : red"> * required field </p>
-        <form action="customer2.php" method="post">
+        <form action="confirmInsert.php" method="post">
 
             Fullname : <input type="text" name="fullName" maxlength="40" minlength="4" required><br><br>
             Address : <textarea name="address" cols="40" rows="5" required></textarea> <span style = "color : red">*</span> <br><br>

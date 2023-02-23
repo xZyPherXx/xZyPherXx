@@ -39,9 +39,9 @@
             $password = '';
             $database = 'bookstore';
             $connect = mysqli_connect($host , $username , $password);
-            
+
             if (!$connect) die('Cannot mySQL!!!');
-            
+
             mysqli_select_db($connect , $database) or die('Cannot connect to database!!!'); 
             mysqli_query($connect , "set character_set_connection=utf8");
             mysqli_query($connect , "set character_set_client=utf8");
@@ -52,7 +52,7 @@
             $email = $_POST['email'];
             $tel = $_POST['tel'];
 
-            $sql = "insert into customer(name , address , email , telephone) values('$name' , '$address' , '$email' , '$tel')";
+            $sql = "INSERT INTO customer(name , address , email , telephone) VALUES ('$name' , '$address' , '$email' , '$tel')";
             mysqli_query($connect , $sql) or die('Cannot insert into table customer!!!' .mysqli_error());
             echo '<br><br><h2> Insert Customer ' . $name . ' Success!!!</h2>';
 
@@ -62,7 +62,7 @@
             // echo '<br>Email : ' . $_POST['email'];
             // echo '<br>Telephone : ' . $_POST['tel'];
 
-            echo '<br><br><a href="customer1.php"> <input type="submit" value="Back To Insert Page"> </a>';
+            echo '<br><br><a href="customerInsert.php"> <input type="submit" value="Back To Insert Page"> </a>';
         ?>
 
     </center>
