@@ -30,7 +30,7 @@
         echo '<center>';
         echo '<br><h3> All Customer </h3>';
         echo '<table width="800" border="0">';
-        echo '<tr><td align="left"> <a href="insertCustomer.php"> Insert Customer </a></td></tr>';
+        echo '<tr><td align="left"> <a href="customerInsert.php"> Insert Customer </a></td></tr>';
         echo '</center>';
 
         echo '<br><table width="800" border="1">';
