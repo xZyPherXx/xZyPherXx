@@ -5,7 +5,7 @@
     $_SESSION['username']=$username;
 ?>
 
-    ชื่อผู้ใช้ที่คุณป้อนมาให้คือ
+    Your name entry is : 
 <?php
     
     echo $_SESSION['username'];

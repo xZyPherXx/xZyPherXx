@@ -6,4 +6,4 @@
 
 ?>
 
-<br><br><a href="session_file1.php">คลิกตรงนี้เพื่อไปยังไฟล์ session_file1.php</a>
+<br><br><a href="session_file1.php"> Click here to go session_file1.php</a>
