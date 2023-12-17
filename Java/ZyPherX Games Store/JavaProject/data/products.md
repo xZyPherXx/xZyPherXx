@@ -1,0 +1,13 @@
+1,RainbowSixSiege,500,39
+2,ARMAIII,999,49
+3,Valorant,300,38
+4,ForzaHorizon5,3000,100
+5,DarkestDungeon,315,20
+6,CS:GO,475,77
+7,Don'tStrave,500,10
+8,GeenHell,300,0
+9,StardewValley,300,499
+A-1,Human:FallFlat,100,30
+A-2,DeadbyDaylight,400,666
+A-3,SeaofThives,500,40
+A-5,A,50,50
